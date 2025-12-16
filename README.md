@@ -161,26 +161,9 @@ pipeline {
                     url: 'https://dev.azure.com/org/project/_git/repo'
             }
         }
-
-        stage('Build') {
-            steps {
-                echo 'Building the application...'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                echo 'Running tests...'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo 'Deploying application...'
-            }
         }
     }
-}
+
 ```
 
 Commit and push this file to Azure Repo.
